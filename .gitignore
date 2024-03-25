@@ -11,3 +11,8 @@ __pycache__/
 .venv
 .airflowctl/
 background_logs_info.txt
+
+stuffs/weatherLog/
+stuffs/buffered_log/
+
+.log
