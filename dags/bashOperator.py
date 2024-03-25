@@ -14,6 +14,18 @@ python3 {PWD}fetching_data.py | grep "Abuja" | cut -d "," -f2-4 | tr ")" " "  >>
 python3 {PWD}fetching_data.py | grep "Port Harcourt" | cut -d "," -f2-4 | tr ")" " "  >> {PWD}weatherLog/Port_weather.log
 '''
 
+BUFFERING = f'''
+head -n2 < {PWD}weatherLog/Abj_weather.log > {PWD}buffered_log/Abj_weather.csv && tail -n10 <  {PWD}weatherLog/Abj_weather.log >> {PWD}buffered_log/Abj_weather.csv
+head -n2 < {PWD}weatherLog/Lag_weather.log > {PWD}buffered_log/Lag_weather.csv && tail -n10 <  {PWD}weatherLog/Lag_weather.log >> {PWD}buffered_log/Lag_weather.csv
+head -n2 < {PWD}weatherLog/Port_weather.log > {PWD}buffered_log/Port_weather.csv && tail -n10 <  {PWD}weatherLog/Port_weather.log >> {PWD}buffered_log/Port_weather.csv
+
+'''
+
+RELOADING_LOG = f'''
+cat <  {PWD}buffered_log/Abj_weather.csv > {PWD}weatherLog/Abj_weather.log
+cat <  {PWD}buffered_log/Lag_weather.csv > {PWD}weatherLog/Lag_weather.log
+cat <  {PWD}buffered_log/Port_weather.csv > {PWD}weatherLog/Port_weather.log
+'''
 
 
 default_args = {
@@ -49,4 +61,18 @@ with DAG(
         bash_command=EXTRACTING
     )
 
-task1 >> task2 >> task3
+
+    task4 = BashOperator(
+        task_id="Buffering_weather_reading",
+        bash_command=BUFFERING  
+    )
+
+
+    task5 = BashOperator(
+        task_id="reloading_log",
+        bash_command=RELOADING_LOG  
+    )
+
+
+
+task1 >> task2 >> task3 >> task4 >> task5
