@@ -15,9 +15,9 @@ python3 {PWD}fetching_data.py | grep "Port Harcourt" | cut -d "," -f2-4 | tr ")"
 '''
 
 BUFFERING = f'''
-head -n2 < {PWD}weatherLog/Abj_weather.log > {PWD}buffered_log/Abj_weather.csv && tail -n10 <  {PWD}weatherLog/Abj_weather.log >> {PWD}buffered_log/Abj_weather.csv
-head -n2 < {PWD}weatherLog/Lag_weather.log > {PWD}buffered_log/Lag_weather.csv && tail -n10 <  {PWD}weatherLog/Lag_weather.log >> {PWD}buffered_log/Lag_weather.csv
-head -n2 < {PWD}weatherLog/Port_weather.log > {PWD}buffered_log/Port_weather.csv && tail -n10 <  {PWD}weatherLog/Port_weather.log >> {PWD}buffered_log/Port_weather.csv
+head -n2 < {PWD}weatherLog/Abj_weather.log > {PWD}buffered_log/Abj_weather.csv && tail -n30 <  {PWD}weatherLog/Abj_weather.log >> {PWD}buffered_log/Abj_weather.csv
+head -n2 < {PWD}weatherLog/Lag_weather.log > {PWD}buffered_log/Lag_weather.csv && tail -n30 <  {PWD}weatherLog/Lag_weather.log >> {PWD}buffered_log/Lag_weather.csv
+head -n2 < {PWD}weatherLog/Port_weather.log > {PWD}buffered_log/Port_weather.csv && tail -n30 <  {PWD}weatherLog/Port_weather.log >> {PWD}buffered_log/Port_weather.csv
 
 '''
 
@@ -51,11 +51,6 @@ with DAG(
         task_id="Start",
     )
 
-    task2 = BashOperator(
-        task_id="bash_operator",
-        bash_command= 'echo "this is an example $(date)"'  #"bash /Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1/stuffs/temperature_ETL.sh"
-    )
-
     task3 = BashOperator(
         task_id="Getting_weather_reading",
         bash_command=EXTRACTING
@@ -75,4 +70,4 @@ with DAG(
 
 
 
-task1 >> task2 >> task3 >> task4 >> task5
+task1 >> task3 >> task4 >> task5
