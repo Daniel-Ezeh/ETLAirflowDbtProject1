@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: postgres
+    description: A table in postgres
+    #database: 
+    schema: public
+    tables:
+      - name: example_table

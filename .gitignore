@@ -12,7 +12,9 @@ __pycache__/
 .airflowctl/
 background_logs_info.txt
 
-stuffs/weatherLog/
+/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1/stuffs/weatherLog/Abj_weather.log
 stuffs/buffered_log/
 
-.log
+*.log
+
+target/
