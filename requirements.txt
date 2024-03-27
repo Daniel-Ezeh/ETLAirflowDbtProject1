@@ -1,4 +1,6 @@
-apache-airflow==2.6.3
-mysql-connector-python
-psycopg2
-pg8000
+# apache-airflow==2.6.3
+# mysql-connector-python
+# psycopg2
+# pg8000
+dbt-core 
+dbt-postgres
