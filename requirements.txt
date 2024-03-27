@@ -2,5 +2,8 @@
 # mysql-connector-python
 # psycopg2
 # pg8000
-dbt-core 
-dbt-postgres
+# dbt-core 
+# dbt-postgres
+importlib-metadata==6.11.0
+apache-airflow-providers-google
+dbt-airflow
