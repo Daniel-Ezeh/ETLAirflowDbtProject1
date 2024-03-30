@@ -1,4 +1,4 @@
-my_postgres_db:
+my_dbt:
   target: dev
   outputs:
     dev:
