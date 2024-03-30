@@ -1,9 +1,6 @@
-apache-airflow==2.6.3
-mysql-connector-python
-psycopg2
 pg8000
 dbt-core 
 dbt-postgres
-importlib-metadata==3.6.0
+importlib-metadata
 apache-airflow-providers-google
 dbt-airflow
