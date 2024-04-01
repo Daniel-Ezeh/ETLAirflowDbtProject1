@@ -1,25 +1,20 @@
-# This file allows you to configure Airflow Connections, Pools, and Variables in a single place for local development only.
-# NOTE: json dicts can be added to the conn_extra field as yaml key value pairs. See the example below.
-
-# For more information, refer to our docs: https://docs.astronomer.io/develop-project#configure-airflow_settingsyaml-local-development-only
-# For questions, reach out to: https://support.astronomer.io
-# For issues create an issue ticket here: https://github.com/astronomer/astro-cli/issues
-
 airflow:
   connections:
-    - conn_id:
-      conn_type:
-      conn_host:
-      conn_schema:
-      conn_login:
-      conn_password:
-      conn_port:
-      conn_extra:
-        example_extra_field: example-value
+  - conn_extra:
+      example_extra_field: example-value
+    conn_host: null
+    conn_id: null
+    conn_login: null
+    conn_password: null
+    conn_port: null
+    conn_schema: null
+    conn_type: null
   pools:
-    - pool_name:
-      pool_slot:
-      pool_description:
+  - pool_description: null
+    pool_name: null
+    pool_slot: null
   variables:
-    - variable_name:
-      variable_value:
+  - variable_name: null
+    variable_value: null
+airflow_version: 2.8.4
+python_version: 3.8.18

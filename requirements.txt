@@ -1,9 +1,9 @@
-pg8000
-dbt-core 
+pg8000==1.30.5
+dbt-core==1.7.11
 dbt-postgres
-importlib-metadata
-apache-airflow-providers-google
-dbt-airflow
-
+importlib-metadata==6.11.0
+apache-airflow-providers-google==10.16.0
+apache-airflow-providers-amazon==8.19.0
+dbt-airflow==2.10.0
 astronomer-cosmos==1.0.4
 apache-airflow-providers-postgres==5.6.0

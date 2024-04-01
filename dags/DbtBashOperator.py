@@ -25,14 +25,14 @@ default_args = {
 )
 
 
-def simple_dbt_dag():
+def dbt_run():
     dbt_run = BashOperator(
         task_id="dbt_run",
         bash_command="export HOME=/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1/my_dbt \
-             && source $PATH_TO_DBT_VENV && dbt run --models .",
+             && source $PATH_TO_DBT_VENV && dbt run",
         env={"PATH_TO_DBT_VENV": PATH_TO_DBT_VENV},
         cwd=PATH_TO_DBT_PROJECT,
     )
 
 
-simple_dbt_dag()
+dbt_run()
