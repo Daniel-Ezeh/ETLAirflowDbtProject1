@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 from airflow import DAG
-import airflow
 from airflow.operators.bash import BashOperator
 from airflow.operators.empty import EmptyOperator
 
@@ -46,7 +45,6 @@ with DAG(
     schedule_interval = '*/1 * * * *'
 ) as dag:
     
-    pass
     task1 = EmptyOperator(
         task_id="Start",
     )

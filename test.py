@@ -1,4 +1,4 @@
-import mysql.connector
+# import mysql.connector
 import os
 from dotenv import load_dotenv
 import pg8000
@@ -7,22 +7,22 @@ import pg8000
 # # Load environment variables from .env file
 load_dotenv()
 
-conn = mysql.connector.connect(
-    host="localhost",
-    user=os.getenv("MYSQL_USER"),
-    password=os.getenv('MYSQL_PSWD'),
-    database=os.getenv('MYSQL_DB')
-)
+# conn = mysql.connector.connect(
+#     host="localhost",
+#     user=os.getenv("MYSQL_USER"),
+#     password=os.getenv('MYSQL_PSWD'),
+#     database=os.getenv('MYSQL_DB')
+# )
 
 
-cursor = conn.cursor()
-cursor.execute("SELECT * FROM ExampleTable")
+# cursor = conn.cursor()
+# cursor.execute("SELECT * FROM ExampleTable")
 
-rows = cursor.fetchall()
-for row in rows:
-    print(row)
+# rows = cursor.fetchall()
+# for row in rows:
+#     print(row)
 
-conn.close()
+# conn.close()
 
 
 ################################-----------------------------

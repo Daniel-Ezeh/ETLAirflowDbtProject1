@@ -55,16 +55,16 @@ def fetch_data():
 
         data = response.json()
 
-        myDict = dict(
-        firstname = data['results'][0]['name']['first'],
-        lastname = data['results'][0]['name']['last'],
-        gender = data['results'][0]['gender'],
-        email = data['results'][0]['email'],
-        phone = data['results'][0]['phone'],
-        address = str(data['results'][0]['location']['street']['number']) + " " + data['results'][0]['location']['street']['name'] + "," + " " + data['results'][0]['location']['city'] + "," + " " + data['results'][0]['location']['state'],
-        country = data['results'][0]['location']['country'],
-        )
-        return myDict
+        # myDict = dict(
+        # firstname = data['results'][0]['name']['first'],
+        # lastname = data['results'][0]['name']['last'],
+        # gender = data['results'][0]['gender'],
+        # email = data['results'][0]['email'],
+        # phone = data['results'][0]['phone'],
+        # address = str(data['results'][0]['location']['street']['number']) + " " + data['results'][0]['location']['street']['name'] + "," + " " + data['results'][0]['location']['city'] + "," + " " + data['results'][0]['location']['state'],
+        # country = data['results'][0]['location']['country'],
+        # )
+        return data
     
 
     except requests.exceptions.RequestException as e:

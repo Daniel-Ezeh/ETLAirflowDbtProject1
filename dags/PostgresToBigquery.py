@@ -38,7 +38,7 @@ with DAG(
     extract_from_postgres = PostgresOperator(
         task_id='extract_from_postgres',
         sql='SELECT * FROM public.example_table ;',
-        postgres_conn_id='postgres_default',
+        postgres_conn_id='postgres_localhost',
         dag=dag,
     )
 
@@ -64,3 +64,5 @@ with DAG(
     )
 
 start >> extract_from_postgres >> create_new_dataset >> end
+
+

@@ -17,3 +17,7 @@ tests/
 .venv
 .venv
 .venv
+
+stuffs/buffered_log/
+stuffs/customer_log/
+stuffs/weatherLog/
