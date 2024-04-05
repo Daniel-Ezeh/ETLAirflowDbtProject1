@@ -8,4 +8,4 @@ my_dbt:
       user: postgres
       pass: '11111111'
       dbname: postgres
-      schema: public 
+      schema: daniel 
