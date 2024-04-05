@@ -1,11 +1,19 @@
 import os
 import requests
+from datetime import datetime
 
 
 def get_user():
     """
     Fetch weather data from the API for a specific city.
     """
+    t = datetime.now()
+    customer_id = t.strftime("%f%y%j%H%M")
+    a = int(customer_id)
+
+    dating = t.strftime("%Y-%m-%d %H:%M:%S")
+
+
     # Endpoint URL for the weather API
     url = f'https://randomuser.me/api/?results=1'
     try:
@@ -16,6 +24,7 @@ def get_user():
         data = response.json()
 
         myDict = dict(
+        customer_id = a,
         title = data['results'][0]['name']['title'],
         firstname = data['results'][0]['name']['first'],
         lastname = data['results'][0]['name']['last'],
@@ -24,7 +33,7 @@ def get_user():
         gender = data['results'][0]['gender'],
         phone = data['results'][0]['phone'],
         country = data['results'][0]['location']['country'],
-        post_code = data['results'][0]['location']['postcode']
+        date_added = dating
         )
         return myDict
 
@@ -38,13 +47,15 @@ USER = get_user()
 
 
 values = (
+    USER['customer_id'],
     USER['firstname'],
     USER['lastname'],
     USER['gender'],
     USER['email'],
     USER['phone'],
     USER['address'],
-    USER['country']
+    USER['country'],
+    USER['date_added']
 )
 
 print(values)
