@@ -17,5 +17,5 @@ echo "Temperature, Humidity, Presure" > $DIR/stuffs/buffered_log/Abj_weather.csv
 echo "Temperature, Humidity, Presure" > $DIR/stuffs/buffered_log/Port_weather.csv
 
 
-
-echo "firstname, lastname, gender, email, phone, address, country" > $DIR/stuffs/customer_log/customers.csv
+DIR=/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1
+echo "customer_id, firstname, lastname, gender, email, phone, address, country, date_added" > $DIR/stuffs/customer_log/customers.csv
