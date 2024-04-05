@@ -1,16 +1,28 @@
 version: 2
 
 models:
-  - name: base_postgres_example_table
+  - name: base_postgres_customers
     columns: 
-      - name: id
+      - name: customer_id
         description: primary key
         tests:
         - unique
         - not_null
-      - name: name
+      - name: first_name
         tests:
         - not_null
-      - name: age
+      - name: last_name
+        tests:
+        - not_null
+      - name: email
+
+      - name: phone
+
+      - name: address
+
+      - name: country
+
+      - name: date_added
+
 
 

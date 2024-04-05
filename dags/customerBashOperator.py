@@ -14,7 +14,7 @@ python {CWD}fetch_customer.py | sed "s/['()]//g" >> {CWD}customer_log/customers.
 default_args = {
     'owner':"Dan4sure",
     'depends_on_past': False,
-    'retries': 1,
+    'retries': 0,
     'retry_delay': timedelta(seconds=10),
     'catchup': True
 }
