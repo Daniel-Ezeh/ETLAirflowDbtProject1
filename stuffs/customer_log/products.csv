@@ -1,0 +1,77 @@
+product_id,brand,model,color,memory,storage,rating,selling_price
+1001,OPPO,A53,Moonlight Black,4,64,4.5,11990
+1002,OPPO,A12,Black,3,32,4.4,9490
+1003,OPPO,A53s 5G,Crystal Blue,6,128,4.3,15990
+1004,OPPO,A11K,Flowing Silver,2,32,4.2,8990
+1005,OPPO,F17 Pro,Matte Black,8,128,4.3,19990
+1006,OPPO,Reno6 Pro 5G,Stellar Black,1,25,4.4,39990
+1007,HTC,U11+,Amazing Silver,6,128,4.7,56990
+1008,HTC,Wildfire X,Blue,3,32,3.9,12999
+1009,IQOO,3,Quantum Silver,8,25,4.4,37990
+1010,Google Pixel,4a,Just Black,6,128,4.5,31999
+1011,Google Pixel,3a XL,Clearly White,4,64,4.5,44999
+1012,LG,W11,Black,3,32,4,7690
+1013,LG,Velvet Dual Screen,Aurora Silver,6,128,4.4,44990
+1014,LG,L90 Dual,White,1,8 ,4.2,15532
+1015,LG,W31,Midnight Blue,4,64,4,9999
+1016,LG,Candy K9,Moroccan Blue,2,16,4.1,5899
+1017,LG,K-7,Titan,1,8 ,4.1,6590
+1018,Google Pixel,Nexus 5X,White,2,16,4.5,25400
+1019,ASUS,ROG Phone 5,Black,8,128,4.3,49999
+1020,ASUS,Zenfone Max Pro M1,Grey,4,64,4.3,15599
+1021,ASUS,ZenFone 5Z,Midnight Blue,6,128,4.5,36299
+1022,ASUS,Zenfone Go 3rd Gen,Gold,2,16,3.8,8999
+1023,ASUS,Zenfone Max ZC550KL,Blue,3,32,4.1,14499
+1024,realme,C11 2021,Cool Blue,4,64,4.2,8799
+1025,realme,Narzo 30,Racing Blue,6,128,4.3,15499
+1026,realme,X3 SuperZoom,Glacier Blue,8,128,4.3,27999
+1027,realme,X50 Pro 5G,Rust Red,1,25,4.3,47999
+1028,realme,C2,Diamond Blue,2,16,4.4,6499
+1029,GIONEE,A1,Grey,4,64,4,21499
+1030,GIONEE,F8 Neo,Blue,2,32,3.9,5499
+1031,GIONEE,L800,Black,8,16,4,2199
+1032,GIONEE,Pioneer P5W,Red,1,16,3.1,4150
+1033,GIONEE,Pioneer P3,White,5,4 ,3.6,2350
+1034,GIONEE,M7,Gold,6,64,2.7,9290
+1035,Nokia,105 DS 2020,Black,4,4 ,4.2,1349
+1036,Nokia,2.4,Charcoal Grey,3,64,4,10399
+1037,Nokia,9,Blue,6,128,3.8,56299
+1038,Nokia,1,Dark Blue,1,8 ,3.9,4800
+1039,Nokia,3,Silver White,2,16,3.9,8588
+1040,Nokia,Asha 503,White,5,32,3.8,7399
+1041,Apple,iPhone XR,Red,3,64,4.6,42999
+1042,Apple,iPhone 12 Mini,Green,4,128,4.5,61999
+1044,Apple,iPhone 6,Gold,1,64,4.4,62500
+1045,SAMSUNG,M31s,Mirage Blue,8,128,4.3,20949
+1046,SAMSUNG,M02s,Blue,3,32,4.2,9539
+1048,SAMSUNG,Galaxy A22 5G,Mint,6,128,4.3,19818
+1049,SAMSUNG,Galaxy Z Fold3 5G,Phantom Black,1,51,4.4,157999
+1050,SAMSUNG,Galaxy J2 2018,Gold,2,16,4.3,7500
+1051,SAMSUNG,Galaxy J5,White,1,8 ,4.3,11390
+1052,Lenovo,S930,Silver,1,8 ,4.3,13604
+1053,Lenovo,A7,Blue,2,32,4,6950
+1054,Lenovo,Vibe Shot,Grey,3,32,3.7,9799
+1055,Lenovo,A390,White,5,4 ,3.7,7580
+1056,Motorola,Razr 5G,Polished Graphite,8,25,4,89999
+1057,Motorola,Razr,Black,6,128,3.8,74999
+1058,Motorola,C Plus,Pearl White,2,16,4.2,6900
+1059,Motorola,Edge+,Smoky Sangria,1,25,4.1,64999
+1060,Motorola,G5s,Oxford Blue,4,32,4.1,9869
+1061,Motorola,G5,Lunar Grey,3,16,4.2,5450
+1062,vivo,Y20G,Obsidian Black,6,128,4.3,13400
+1064,vivo,Y73,Diamond Flare,3,64,4.4,28990
+1065,vivo,Y1S,Aurora Blue,4,32,4.4,22654
+1066,Xiaomi,Mi 10,Twilight Grey,8,25,4.2,45871
+1067,Xiaomi,MI 11X 5G,CELESTIAL SILVER,6,128,4.1,26295
+1068,Xiaomi,Redmi 5,Gold,3,32,4.4,9399
+1069,Xiaomi,Redmi 6A,Black,2,32,4.3,7989
+1070,HTC,U Ultra,Brilliant Black,4,64,4,62990
+1071,HTC,Desire 630,Sprinkle White,2,16,3.8,12570
+1072,HTC,820 G+,Milkyway Grey,1,16,3.9,19695
+1073,HTC,Desire 816,White,1,8 ,4.1,27390
+1074,POCO,F3 GT,Predator Black,8,25,4.3,30999
+1075,vivo,V23 Pro 5G,Stardust Black,1,25,4.1,43990
+1076,vivo,X70 Pro,Aurora Dawn,8,128,4.5,46990
+1078,Infinix,Smart 2,Sandstone Black,3,32,4.1,7946
+1079,Infinix,Hot 10 Play,Purple,4,64,4.3,9299
+1080,Infinix,Smart 2,City Blue,2,16,4.1,6949

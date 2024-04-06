@@ -11,7 +11,7 @@ def get_user():
     customer_id = t.strftime("%f%y%j%H%M")
     a = int(customer_id)
 
-    dating = t.strftime("%Y-%m-%d %H:%M:%S")
+    dating = t.strftime("%Y-%m-%dT%H:%M:%S")
 
 
     # Endpoint URL for the weather API

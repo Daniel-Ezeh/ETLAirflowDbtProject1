@@ -18,7 +18,7 @@ echo "$header" > $FILE_PATH/customers.csv
 default_args = {
     'owner':"Dan4sure",
     'depends_on_past': False,
-    'retries': 1,
+    'retries': 0,
     'retry_delay': timedelta(seconds=10),
     'catchup': True
 }
@@ -40,7 +40,7 @@ with DAG(
     task2 = PostgresOperator(
         task_id='load_csv_to_postgres',
         postgres_conn_id='postgres_localhost',  # Name of your PostgreSQL connection
-        sql=f'COPY customer FROM \'{FILE_PATH}customers.csv\' DELIMITER \',\' CSV HEADER;',
+        sql=f'COPY customers FROM \'{FILE_PATH}customers.csv\' DELIMITER \',\' CSV HEADER;',
         dag=dag,
     )
 

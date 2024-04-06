@@ -19,5 +19,5 @@ tests/
 .venv
 
 stuffs/buffered_log/
-stuffs/customer_log/
+stuffs/customer_log/customers.csv
 stuffs/weatherLog/

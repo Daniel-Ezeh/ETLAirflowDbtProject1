@@ -1,0 +1,23 @@
+sales_person_id,name,age,gender,position,joining_date,salary
+100,Michael Morton DDS,23,Male,Intern,2024-01-21,378550
+101,Brian Anderson,26,Male,Intern,2024-01-22,388780
+102,Maria Short,24,Female,Intern,2024-01-21,356360
+103,Dana Taylor,25,Female,Intern,2024-01-22,368420
+104,Daniel Young,26,Female,Intern,2024-01-20,329030
+105,Jennifer Gilbert,25,Male,Intern,2024-01-21,345350
+106,Danielle Rodriguez,24,Male,Intern,2024-01-21,353750
+107,John Elliott,23,Female,Intern,2024-01-22,314560
+108,Sherry Werner,23,Female,Intern,2024-01-21,351920
+109,Melissa Galvan,40,Male,Manager,2024-01-13,1184660
+110,Carlos Bush,42,Female,Manager,2024-01-01,1010410
+111,Ronald Flores,54,Male,Manager,2024-01-04,1070800
+112,Kathleen May,55,Female,Manager,2024-01-10,1101040
+113,Matthew Martin,44,Male,Manager,2024-01-08,1106210
+114,Jon Hays,54,Male,Manager,2024-01-11,1179510
+115,Patricia Ortega,48,Female,Manager,2024-01-09,1174580
+116,Joshua Nelson,42,Female,Team Lead,2024-01-07,950720
+117,Dennis Nash,34,Female,Team Lead,2024-01-06,938960
+118,Karen Harmon,39,Female,Team Lead,2024-01-05,989120
+119,Stephanie Lawson,44,Female,Team Lead,2024-01-04,1025920
+120,Debra Chen,41,Male,Team Lead,2024-01-04,1083900
+121,Carrie Smith,35,Male,Team Lead,2024-01-08,940260

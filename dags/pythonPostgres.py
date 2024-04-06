@@ -16,17 +16,19 @@ default_args = {
 }
 
 SQL = '''insert into 
-  customer (
+  customers (
+    customer_id,
     firstname, 
     lastname, 
     gender, 
     email, 
     phone, 
     address, 
-    country
+    country,
+    date_added
   )
 values
-  (%s, %s, %s, %s, %s, %s, %s);
+  (%s, %s, %s, %s, %s, %s, %s, %s, %s);
 '''
 
 
