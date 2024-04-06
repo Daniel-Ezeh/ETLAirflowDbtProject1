@@ -25,3 +25,8 @@ echo "product_id, name, description, price" > $DIR/stuffs/customer_log/products.
 
 DIR=/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1
 echo "sale_id, customer_id, product_id, quantity, sale_date" > $DIR/stuffs/customer_log/sales.csv
+
+
+psql
+COPY salesperson FROM '/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1/stuffs/customer_log/salesperson.csv' DELIMITER ',' CSV HEADER;
+COPY products FROM '/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1/stuffs/customer_log/products.csv' DELIMITER ',' CSV HEADER;
