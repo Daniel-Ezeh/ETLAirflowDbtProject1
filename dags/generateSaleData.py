@@ -3,9 +3,11 @@ from airflow import DAG
 from airflow.operators.empty import EmptyOperator
 from airflow.operators.bash import BashOperator
 
+PATH_TO_DBT_PROJECT = "/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1/my_dbt"
+PATH_TO_DBT_VENV = "/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1/.venv/bin/activate"
+HOME="/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1"
 
 CWD = '/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1/stuffs'
-
 COMAND=f'''
 record=$(python3 {CWD}/sales_details.py); \
 echo $record | psql -h localhost -p 5432 -U postgres -d postgres -c "INSERT INTO public.sales  VALUES $record;"
@@ -26,7 +28,7 @@ with DAG(
     default_args = default_args,
     description='A DAG to load sales into PostgreSQL',
     start_date = datetime.now() - timedelta(hours=1) - timedelta(minutes=2),
-    schedule_interval = '*/5 * * * *'
+    schedule_interval = '*/2 * * * *'
 ) as dag:
     
     task1 = EmptyOperator(
@@ -39,9 +41,19 @@ with DAG(
         dag=dag,
     )
 
-    task3 = EmptyOperator(
+
+    task3 = BashOperator(
+        task_id="dbt_run",
+        bash_command="export HOME=/Users/nombauser/Desktop/GIT/my_git_repos/ETLAirflowDbtProject1/my_dbt \
+             && source $PATH_TO_DBT_VENV && dbt run",
+        env={"PATH_TO_DBT_VENV": PATH_TO_DBT_VENV},
+        cwd=PATH_TO_DBT_PROJECT,
+    )
+
+
+    task4 = EmptyOperator(
         task_id="Stop",
     )
 
 
-    task1 >> task2 >> task3
+    task1 >> task2 >> task3 >> task4

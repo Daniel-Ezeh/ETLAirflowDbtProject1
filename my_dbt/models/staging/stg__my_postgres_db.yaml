@@ -14,18 +14,84 @@ models:
       - name: last_name
         tests:
         - not_null
-        
       - name: gender
-      
       - name: email
-
       - name: phone
-
       - name: address
-
       - name: country
-
       - name: date_added
 
 
+  - name: base_postgres_products
+    columns: 
+      - name: product_id
+        description: primary key
+        tests:
+        - unique
+        - not_null
+      - name: brand
+        tests:
+        - not_null
+      - name: model
+        tests:
+        - not_null
+      - name: color
+        tests:
+        - not_null
+      - name: memory
+        tests:
+        - not_null
+      - name: storage
+        tests:
+        - not_null
+      - name: rating
+      - name: selling_price
+        tests:
+        - not_null
+
+
+  - name: base_postgres_sales
+    columns: 
+      - name: sale_id
+        description: primary key
+      - name: customer_id
+        tests:
+        - not_null
+      - name: sales_person_id
+        tests:
+        - not_null
+      - name: product_id
+        tests:
+        - not_null
+      - name: quantity
+        tests:
+        - not_null
+      - name: sale_date
+        tests:
+        - not_null
+
+
+
+  - name: base_postgres_salesperson
+    columns: 
+      - name: sales_person_id
+        description: primary key
+      - name: name
+        tests:
+        - not_null
+      - name: age
+        tests:
+        - not_null
+      - name: gender
+        tests:
+        - not_null
+      - name: position
+        tests:
+        - not_null
+      - name: joining_date
+        tests:
+        - not_null
+      - name: salary
+        tests:
+        - not_null
 

@@ -20,7 +20,7 @@ default_args = {
     # schedule="@daily",
     catchup=False,
     start_date = datetime.now() - timedelta(hours=1) - timedelta(minutes=2),
-    schedule_interval = '*/1 * * * *',
+    schedule_interval = '*/50 * * * *',
     default_args = default_args
 )
 

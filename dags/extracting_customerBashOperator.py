@@ -26,7 +26,7 @@ with DAG(
     description = "Extracts data",
     start_date = datetime.now() - timedelta(hours=1) - timedelta(minutes=2),
     # schedule_interval = timedelta(minutes=2)
-    schedule_interval = '*/5 * * * *'
+    schedule_interval = '*/3 * * * *'
 ) as dag:
     
     task1 = EmptyOperator(

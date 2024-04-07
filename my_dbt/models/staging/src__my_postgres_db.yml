@@ -7,3 +7,6 @@ sources:
     schema: public
     tables:
       - name: customers
+      - name: products
+      - name: sales
+      - name: salesperson
