@@ -37,12 +37,13 @@ CREATE TABLE salesperson (
 
 
 CREATE TABLE sales (
-    sale_id BIGINT PRIMARY KEY,
+    sale_id BIGINT NOT NULL,
     customer_id BIGINT REFERENCES customers(customer_id) ON DELETE CASCADE,
     sales_person_id INT REFERENCES salesperson(sales_person_id) ON DELETE CASCADE,
     product_id INT REFERENCES products(product_id) ON DELETE CASCADE,
     quantity INT NOT NULL,
-    sale_date TIMESTAMP NOT NULL
+    sale_date TIMESTAMP NOT NULL,
+    CONSTRAINT composite_key PRIMARY KEY (sale_id, customer_id)
 );
 
 
@@ -53,3 +54,6 @@ DROP TABLE products;
 DROP TABLE sales;
 
 DROP TABLE salesperson;
+
+
+
