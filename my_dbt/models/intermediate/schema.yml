@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: int_customer_purchase
+    description: T
+    columns:
+      - name: customer_id
+        description: a
+      - name: first_name
+        description: a
+      - name: last_name
+        description: a
+      - name: gender
+        description: a
+      - name: country
+        description: a
+      - name: brand
+        description: a
+      - name: model
+        description: a
+      - name: color
+        description: a
+      - name: memory
+        description: a
+      - name: selling_price
+        description: a
+      - name: quantity
+        description: a
+      - name: sale_date
+        description: a
+    
