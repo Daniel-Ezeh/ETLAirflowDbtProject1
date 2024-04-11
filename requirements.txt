@@ -1,6 +1,6 @@
 pg8000==1.30.5
 dbt-core==1.7.11
-dbt-postgres
+dbt-postgres==1.7.11
 importlib-metadata==6.11.0
 apache-airflow-providers-google==10.16.0
 apache-airflow-providers-amazon==8.19.0
