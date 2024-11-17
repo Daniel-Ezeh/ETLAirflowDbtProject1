@@ -1,4 +1,6 @@
 
+<img width="1333" alt="image" src="https://github.com/user-attachments/assets/dd8483b0-535b-4db8-ae3f-933f148eaa84">
+
 
 Install mysql-connector-python-8.3.0
 
